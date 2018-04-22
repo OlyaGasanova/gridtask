@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Крестики-нолики</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/vader/jquery-ui.css">
+    <link rel="stylesheet" href="/tictactoe.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/tictactoe.js"></script>
+</head>
+<body onload="TicTacToe.init();">
+    <table border="0" width="100%">
+        <thead>
+            <th colspan="2" id="status" class="ui-widget ui-state-hover ui-corner-all">Подключаемся к серверу...</th>
+        </thead>
+        <tbody>
+        <td>
+            <textarea name="name" rows="28" cols="40"></textarea>
+            <p></p>
+            <input type="text" name="text" size="30">
+            <button type="button" name="button" id="send">Отправить</button>
+        </td>
+        <td id="board" class="ui-widget" valign="top"><div id="masked" class="ui-widget-shadow ui-corner-all ui-widget-overlay"></div>
+            <div id="timerpanel">Время до конца хода: <span id="timer">15</span> сек.</div>
+            <table class="ui-widget ui-corner-all" cellpadding="0" cellspacing="0" align="left" id="board-table"></table>
+        </td>
+            <td id="stats" class="ui-widget" valign="top"><br /><button id="reload">Новая игра</button><br /><br /></td>
+
+
+        </tbody>
+    </table>
+
+</body>
+</html>

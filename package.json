@@ -1,0 +1,20 @@
+{
+  "name": "TicTacToe",
+  "description": "TicTacToe",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "events": "^0.1.1",
+    "express": "4.16.3",
+    "jquery": "^2.1.4",
+    "socket.io": "2.1.0",
+    "uniqid": "^4.1.1",
+    "util": "^0.10.3"
+  }
+}
